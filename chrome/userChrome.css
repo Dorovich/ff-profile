@@ -1,0 +1,32 @@
+/*remove some items from the context menu */
+#context-pocket, #context-savelinktopocket,
+#context-openlinkprivate, 
+#context-print-selection, 
+#context-sendimage, 
+#context-sep-setbackground, #context-setDesktopBackground, 
+#context-inspect-a11y,
+#context-take-screenshot, #context-sep-screenshots {
+	display: none !important;
+}
+/*move findbar to top right*/
+findbar {
+	position: absolute;
+	top: 3px;
+	right: 20px;
+	border-radius: 4px;
+	border-top: unset !important;
+
+	contain: none !important;
+}
+/*reverse the items*/
+.findbar-container {
+	flex-direction: row-reverse;
+}
+/*removes the margins from the "Reached end of page, continued from top" element when it's empty*/
+.findbar-label.findbar-find-status:empty {
+	margin: 0 !important;
+}
+/*disable de menubar*/
+#toolbar-menubar {
+	visibility: collapse;
+}

@@ -32,6 +32,6 @@ findbar {
 }
 /*make the background tabs more visible*/
 .tabbrowser-tab:not([selected="true"]) .tab-background {
- background-color: rgba(160, 160, 160, 0.2); /*for white theme use 0.3 or 0.4*/
- border: solid 1px rgba(207, 207, 216, 0.2);
+ background-color: rgba(160, 160, 160, 0.1); /*for white theme use 0.3 or 0.4*/
+ border: solid 1px rgba(207, 207, 216, 0.1);
 }
